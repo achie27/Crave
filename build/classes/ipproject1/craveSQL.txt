@@ -1,0 +1,56 @@
+create database crave;
+
+use crave;  
+
+create table ids (
+ userid varchar(10) PRIMARY KEY,
+ Password varchar(50),
+ Email varchar(60),
+ Address varchar(300)
+ );
+
+ create table items(
+ name varchar(40),
+ code int(2),
+ price int(6)
+ );
+
+create table cart(
+code int(2));
+
+ create table feedback(
+ userid varchar(40),
+ review varchar(1000)
+ );
+insert into ids values("27","i know","i know","i know");
+
+insert into items values("HP SPECTRE",1,50000);
+insert into items values("MACBOOK",2,50000);
+insert into items values("DELL INSPIRON",3,32000);
+insert into items values("LG 32LB550A",4,20990);
+insert into items values("LG 42PN4500",5,30499);
+insert into items values("MICROMAX 40T280FHD",6,30499);
+insert into items values("CANON EOS",7,24500);
+insert into items values("NIKON D3200",8,24000);
+insert into items values("NIKON COOLPIX",9,8000);
+insert into items values("IPHONE 6",10, 52000);
+insert into items values("MOTOROLA DROID",11,48000);
+insert into items values("NEXUS 6",12,44000);
+insert into items values("JEANS_M",13,800);
+insert into items values("JACKET_M",14,1200);
+insert into items values("SHOES_M",15,1500);
+insert into items values("JACKET_F",16,1200);
+insert into items values("JEANS_F",17,800);
+insert into items values("SHOES_F",18,1500);
+insert into items values("SHOES_K",19,800);
+insert into items values("JEANS_K",20,600);
+insert into items values("JACKET_K",21,700);
+insert into items values("IMPATIENT OPTIMIST",22,700);
+insert into items values("MY JOURNEY",23,760);
+insert into items values("ABRAHAM LINCOLN'S BIOGRAPHY",24,740);
+insert into items values("HARRY POTTER",25,11250);
+insert into items values("NARUTO VOL71",26,2500);
+insert into items values("LORD OF THE RINGS",27,8500);
+insert into items values("PRINCIPLES OF PHYSICS",28,550);
+insert into items values("TMH - IIT MATHEMATICS",29,750);
+insert into items values("TMH - IIT CHEMISTRY",30,750);
